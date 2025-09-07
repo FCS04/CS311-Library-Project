@@ -11,9 +11,9 @@ using ticket_management;
 
 namespace Library_Project
 {
-    public partial class Form1 : Form
+    public partial class frmLibraryManage : Form
     {
-        public Form1()
+        public frmLibraryManage()
         {
             InitializeComponent();
         }

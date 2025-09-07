@@ -18,5 +18,11 @@ namespace Library_Project
         }
         private int score;
         private string message;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            score = 100;
+            message = "Hello, World!";
+            MessageBox.Show(message + " Your score is: " + score);
+        }
     }
 }

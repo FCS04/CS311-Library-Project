@@ -17,5 +17,6 @@ namespace Library_Project
             InitializeComponent();
         }
         private int score;
+        private string message;
     }
 }

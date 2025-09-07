@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ticket_management;
 
 namespace Library_Project
 {
@@ -16,13 +17,11 @@ namespace Library_Project
         {
             InitializeComponent();
         }
-        private int score;
-        private string message;
-        private void button1_Click(object sender, EventArgs e)
+
+        Class1 logs = new Class1("127.0.0.1", "cs311_library_proj", "benidigs", "aquino");
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            score = 100;
-            message = "Hello, World!";
-            MessageBox.Show(message + " Your score is: " + score);
+
         }
     }
 }

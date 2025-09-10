@@ -96,7 +96,7 @@
             // btnclear
             // 
             this.btnclear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnclear.Location = new System.Drawing.Point(278, 179);
+            this.btnclear.Location = new System.Drawing.Point(271, 179);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(75, 23);
             this.btnclear.TabIndex = 6;

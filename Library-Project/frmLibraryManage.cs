@@ -13,18 +13,15 @@ namespace Library_Project
 {
     public partial class frmLibraryManage : Form
     {
-        public frmLibraryManage()
+        private string username;
+        public frmLibraryManage(string username)
         {
             InitializeComponent();
+            this.username = username;
         }
 
         Class1 logs = new Class1("127.0.0.1", "cs311_library_proj", "benidigs", "aquino");
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
         {
 
         }

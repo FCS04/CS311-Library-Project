@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="frmBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrow.Designer.cs">
+      <DependentUpon>frmBorrow.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLibraryManage.cs">
       <SubType>Form</SubType>
     </Compile>

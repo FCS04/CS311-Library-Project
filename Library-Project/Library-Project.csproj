@@ -56,7 +56,13 @@
     <Compile Include="frmAccountsManagement.Designer.cs">
       <DependentUpon>frmAccountsManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddAccount.cs">
+    <Compile Include="frmAddBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddBooks.Designer.cs">
+      <DependentUpon>frmAddBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAddAccount.Designer.cs">
@@ -80,12 +86,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUpdateAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUpdateAccount.Designer.cs">
-      <DependentUpon>frmUpdateAccount.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAccountsManagement.resx">
@@ -93,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddAccount.resx">
       <DependentUpon>frmAddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddBooks.resx">
+      <DependentUpon>frmAddBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBooksManagement.resx">
       <DependentUpon>frmBooksManagement.cs</DependentUpon>
@@ -102,9 +105,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateAccount.resx">
-      <DependentUpon>frmUpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

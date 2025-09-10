@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,8 +31,45 @@ namespace Library_Project
             }
             catch (Exception error)
             {
-                MessageBox.Show(error.Message, "ERROR on frmBooksManagement_Load", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(error.Message, "ERROR on frmLibraryManage_Load", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnAddBook_Click(object sender, EventArgs e)
+        {
+            frmAddBooks addBooksForm = new frmAddBooks();
+            addBooksForm.FormClosed += (s, args) =>
+            {
+                frmLibraryManage_Load(sender, e);
+            };
+            addBooksForm.Show();
+        }
+
+        private int row;
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                row = e.RowIndex;
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message, "ERROR on datagridview1_cellclick", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnUpdateBook_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message, "ERROR on btnUpdateBook_Click", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }

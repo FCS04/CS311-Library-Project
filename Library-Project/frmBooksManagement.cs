@@ -21,19 +21,17 @@ namespace Library_Project
         }
 
         Class1 books = new Class1("127.0.0.1", "cs311_library_proj", "benidigs", "aquino");
-        private void frmLibraryManage_Load(object sender, EventArgs e)
+        private void frmBooksManagement_Load_1(object sender, EventArgs e)
         {
             try
             {
                 DataTable dt = books.GetData("SELECT * FROM tbl_books ORDER BY BookID");
                 dataGridView1.DataSource = dt;
-                dataGridView1.Columns["password"].Visible = false;
             }
             catch (Exception error)
             {
                 MessageBox.Show(error.Message, "ERROR on frmBooksManagement_Load", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

@@ -30,6 +30,18 @@ namespace Library_Project
             accountsmanagementform.Show();
         }
 
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Are you sure you want to logout?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dr == DialogResult.Yes)
+            {
+                frmlogin login = new frmlogin();
+                login.Show();
+                this.Hide();
+            }
+        }
+
         private void bookManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmBooksManagement bookmanagementform = new frmBooksManagement(username);

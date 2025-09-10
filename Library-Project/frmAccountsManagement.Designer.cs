@@ -42,18 +42,18 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 76);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 78);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(869, 328);
+            this.dataGridView1.Size = new System.Drawing.Size(738, 328);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtsearch
             // 
-            this.txtsearch.Location = new System.Drawing.Point(532, 36);
+            this.txtsearch.Location = new System.Drawing.Point(375, 36);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(341, 22);
             this.txtsearch.TabIndex = 1;
@@ -91,7 +91,7 @@
             // 
             // btnreset
             // 
-            this.btnreset.Location = new System.Drawing.Point(797, 423);
+            this.btnreset.Location = new System.Drawing.Point(636, 423);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(112, 30);
             this.btnreset.TabIndex = 5;
@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 465);
+            this.ClientSize = new System.Drawing.Size(808, 482);
             this.Controls.Add(this.btnreset);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btndelete);

@@ -85,7 +85,7 @@
             // btnlogin
             // 
             this.btnlogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnlogin.Location = new System.Drawing.Point(161, 180);
+            this.btnlogin.Location = new System.Drawing.Point(161, 179);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(79, 23);
             this.btnlogin.TabIndex = 5;

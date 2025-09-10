@@ -28,7 +28,6 @@ namespace Library_Project
             {
                 DataTable dt = accounts.GetData("SELECT * FROM tbl_accounts ORDER BY username");
                 dataGridView1.DataSource = dt;
-                dataGridView1.Columns["password"].Visible = false;
             }
             catch (Exception error)
             {

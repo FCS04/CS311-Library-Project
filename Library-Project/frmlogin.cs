@@ -42,7 +42,7 @@ namespace Library_Project
         {
             try
             {
-                DataTable dt = login.GetData("SELECT * FROM tbl_users WHERE username = '" + txtusername.Text + "'AND password = '" + txtpassword.Text + "'AND status = 'ACTIVE'");
+                DataTable dt = login.GetData("SELECT * FROM tbl_accounts WHERE username = '" + txtusername.Text + "'AND password = '" + txtpassword.Text + "'AND status = 'ACTIVE'");
                 if (dt.Rows.Count > 0)
                 {
                     frmMain mainForm = new frmMain(txtusername.Text, dt.Rows[0].Field<string>("usertype"));

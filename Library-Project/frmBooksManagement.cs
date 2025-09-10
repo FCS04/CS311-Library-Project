@@ -20,18 +20,18 @@ namespace Library_Project
             this.username = username;
         }
 
-        Class1 accounts = new Class1("127.0.0.1", "cs311_library_proj", "benidigs", "aquino");
+        Class1 books = new Class1("127.0.0.1", "cs311_library_proj", "benidigs", "aquino");
         private void frmLibraryManage_Load(object sender, EventArgs e)
         {
             try
             {
-                DataTable dt = accounts.GetData("SELECT * FROM tbl_accounts ORDER BY username");
+                DataTable dt = books.GetData("SELECT * FROM tbl_books ORDER BY BookID");
                 dataGridView1.DataSource = dt;
                 dataGridView1.Columns["password"].Visible = false;
             }
             catch (Exception error)
             {
-                MessageBox.Show(error.Message, "ERROR on frmAccounts_Load", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(error.Message, "ERROR on frmBooksManagement_Load", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

@@ -116,7 +116,7 @@
             this.Name = "frmBooksManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book Management";
-            this.Load += new System.EventHandler(this.frmBooksManagement_Load_1);
+            this.Load += new System.EventHandler(this.frmBooksManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

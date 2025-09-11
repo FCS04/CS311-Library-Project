@@ -22,7 +22,7 @@ namespace Library_Project
         }
 
         Class1 books = new Class1("127.0.0.1", "cs311_library_proj", "benidigs", "aquino");
-        private void frmBooksManagement_Load_1(object sender, EventArgs e)
+        private void frmBooksManagement_Load(object sender, EventArgs e)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace Library_Project
             frmAddBooks addBooksForm = new frmAddBooks();
             addBooksForm.FormClosed += (s, args) =>
             {
-                frmLibraryManage_Load(sender, e);
+                frmBooksManagement_Load(sender, e);
             };
             addBooksForm.Show();
         }

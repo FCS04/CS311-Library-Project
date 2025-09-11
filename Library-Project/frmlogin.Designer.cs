@@ -103,6 +103,7 @@
             // btnclear
             // 
             this.btnclear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnclear.Location = new System.Drawing.Point(278, 179);
             this.btnclear.Location = new System.Drawing.Point(361, 220);
             this.btnclear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnclear.Name = "btnclear";

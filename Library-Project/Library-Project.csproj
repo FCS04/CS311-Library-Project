@@ -62,6 +62,9 @@
     <Compile Include="frmAddBooks.Designer.cs">
       <DependentUpon>frmAddBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmAddAccount.Designer.cs">
       <DependentUpon>frmAddAccount.cs</DependentUpon>
     </Compile>
